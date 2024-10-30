@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Інтернет магазин спортивного одягу">
+    <meta name="author" content="Ліканов І.О., Ін-303">
+    <meta name="generator" content="Комп'ютерна графіка та дизайн">
+
+    <title>Sport Clothes Store</title>
+    <link rel="icon" href="../img/shortcut-icon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../img/shortcut-icon.png" alt="Logo" style="width: 30px; height: 30px; margin-right: 0;">
+                        <strong>Sport Clothes</strong>
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../payments.html">Доставка та оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../feedback.html">Зворотній зв'язок</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../contacts.html">Контакти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+          
+    <main class="content">
+        <main class="container my-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Головна</a></li>
+                    <li class="breadcrumb-item"><a href="category_1.html">Чоловічий одяг</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Quicksilver Tech T-Shirt</li>
+                </ol>
+            </nav>
+            <div class="row mb-4">
+                <div class="col-lg-8 mb-3">
+                    <img src="../img/t-shirt.jpg" alt="Quicksilver Tech T-Shirt" class="img-fluid" style="max-width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-lg-4 d-flex flex-column">
+                    <h1>Quicksilver Tech T-Shirt</h1>
+                    <p class="h4 text-danger">$21.00</p>
+                    <button class="btn btn-success btn-sm my-2">Купити в один клік</button>
+                    <button class="btn btn-primary btn-sm my-2">Додати до кошика</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Опис</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Відгуки</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content p-4 border border-top-0" id="productTabsContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                            <p>Quicksilver Tech T-Shirt забезпечує оптимальний комфорт під час активних занять завдяки своїй технології вологовідведення. Виготовлена з легкого, дихаючого матеріалу, ця футболка допомагає підтримувати відчуття свіжості навіть під час найінтенсивніших тренувань.</p>
+                        <ul>
+                            <li>Матеріал: 100% поліестер</li>
+                            <li>Призначена для тренувань на відкритому повітрі та в залі</li>
+                            <li>Сучасний дизайн з логотипом Quicksilver для стильного вигляду</li>
+                        </ul>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <p>Відгуків ще немає, будьте першими</p>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Ім'я</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Ваше ім'я" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="review" class="form-label">Відгук</label>
+                                    <textarea class="form-control" id="review" rows="4" placeholder="Ваш відгук" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-sm">Залишити відгук</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>    
+    <footer>
+    </footer>       
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
