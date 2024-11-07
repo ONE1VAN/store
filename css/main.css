@@ -1,10 +1,26 @@
-.underline {
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "PTSans1";
+    src: url("../fonts/PTSans-Regular.ttf") format("truetype"); 
+    font-weight: normal;
+    font-style: normal;
+}
+  @font-face {
+    font-family: "bebasNeue";
+    src: url("../fonts/BebasNeue-Regular.woff2") format("woff2"); 
+    font-weight: normal;
+    font-style: normal;
+}
+.underline{
     position: relative;
     display: inline-block;
     text-decoration: none;
     color: black;
 }
-.underline::after {
+
+.underline::after{
     content: '';
     position: absolute;
     width: 0;
@@ -14,12 +30,73 @@
     background-color: black;
     transition: width 0.6s ease; 
 }
-.underline:hover::after {
+.underline:hover::after{
     width: 100%; 
 }
+a:hover .card{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+a:hover .card::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px; 
+    left: 0;
+    background-color: black;
+    transition: width 1s ease; 
+}
+a:hover .card:hover::after{
+    width: 100%; 
+}
+.cards h3{
+    font-family: "bebasNeue";
+    font-weight: bold;
+}
+.cards h6{
+    font-family: "PTSans1";
+    font-size: 19px;
+}
+.card {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    box-shadow: 0 5px 17px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.005);
+}
+
+.card-body p {
+    font-size: 24px;
+    margin-top: 20px;
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+
+.card-body p::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black; 
+    transition: width 1s ease;
+}
+
+.card:hover .card-body p::after {
+    width: 100%;
+}
+
 
 body {
     overflow-x: hidden;
+
 }
 footer {
     position: sticky;
@@ -36,38 +113,46 @@ html, body {
 }
 .content {
     flex: 1;
+    margin-top: 70px; 
 }
-
 .icon:hover {
     transform: scale(1.2); 
 }
 header {
+    font-family: "PTSans1", sans-serif;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000; 
 }
-.content {
-    margin-top: 70px; 
+.choose{
+    font-family: "PTSans1", sans-serif;
 }
-
+.nav-link:hover {
+    font-weight: bold;
+}
+.btn-primary:hover{
+    transform: scale(1.04);
+}
 @media (max-width: 767px) {
-    footer .footer-text {
-        display: none; 
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-
-    footer img {
-        width: 150px; 
-        height: auto; 
-        display: block; 
-        margin: 0 auto; 
-        margin-top: 50px;
-        margin-bottom: 100px;
+    .street-address{
+        margin-top: 10px !important;
     }
-
-    footer .icon {
-        display: none; 
+    .footer-text{
+        text-align: center;
+    }
+    footer img{
+        display: block;     
+        margin-left: auto;    
+        margin-right: auto;
+    }
+    footer h5{
+        margin-top: 10px;
     }
 }
-
